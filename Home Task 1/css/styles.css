@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* -----HEADER----- */
+header{
+    display: flex;
+    background-color: #273852;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#heading{
+    width: 18em;
+    background-color: white;
+    color: #273852;
+    border: solid red 2px;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 2px;
+}
+
+#heading h1{
+    letter-spacing: 0.08em;
+}
+
+#heading h6{
+    letter-spacing: 0.05em;
+}
+/* ----MAIN---- */
+main{
+    margin: 50px;
+    margin-top: 40px;
+}
+/* -----CONTENT-HEADER ------ */
+
+#content-headers{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+/* -----CONTENT-HEADER-LEFT ------ */
+
+#content-header-left h6{
+   letter-spacing: 0.09em;
+   margin-bottom: 7px; 
+}
+#content-header-left select{
+    border-radius: 0;
+    height: 2em;
+    width: 12em;
+    padding-left: 0.5em;
+    border-color: #000;
+ }
+/* -----CONTENT-HEADER-CENTER------ */
+
+#content-header-center h2{
+    margin-top: 15px;
+    color: #273852;
+    letter-spacing: 0.08em;
+}
+/* -----CONTENT-HEADER-RIGHT------ */
+
+#content-header-right h6{
+    letter-spacing: 0.09em;
+    margin-bottom: 7px;
+    margin-right: 0; 
+}
+
+
+
+#email-search{
+    border-radius: 0; 
+    height: 2em;
+    width: 12em;
+    padding-left: 0.5em;
+    border-color: #000; 
+    border: 1px solid black;
+    font-weight: lighter; 
+}
+
+#subscribe-btn{
+    background-color: #000;
+    color:white;
+    margin-left: -4px;
+    height: 2em;
+    width: 6em;
+    padding: 0.2em;
+    border:none;
+}
+
+
+/* ---- ARTICLES ----- */
+article{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 10%;
+    height: 10%;
+}
+
+image{
+    display: flex;
+    align-items: center;
+}
+
+img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin-right: 2rem;
+}
+
+#article-one,#article-two{
+border-bottom: 1px solid #ccc;
+padding-bottom: 2rem;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article-title{
+    color: #273852;
+    font-weight: bold;
+}
+
+.article-date{
+    font-size: smaller;
+}
+
+span{
+    color: #464547;
+}
+
+.article-description{
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.article-button{
+    background-color: #d55c45;
+    color: #fff;
+    padding:0 1rem;
+    border: none;
+    font-size: 0.9rem;
+    height: 2em;
+}
+
+
+/* ----FOOTER---- */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #273852;
+    width: 100%;
+    height: 5%;
+    color: #fff;
+}
+
+
+/* ---Responsive---- */
+@media screen and (max-width: 982px) {
+    .article-title{
+        font-size: 1rem;
+    }
+    .article-date{
+        font-size: 0.8rem;
+    }
+    .article-description {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 848px) {
+    .article-title{
+        font-size: 0.75rem;
+    }
+    .article-date{
+        font-size: 0.55rem;
+    }
+    .article-description {
+        font-size: 0.65rem;
+    }
+
+    img{
+        width:150px;
+        height:150px;
+    }
+
+    .article-button{
+        font-size: 0.8rem;
+    }
+
+    #content-header-left h6{
+        font-size: 0.5rem;
+    }
+    #content-header-left select{
+        width: 10em;
+    }
+    #content-header-center h2{
+        font-size: 1.2rem;
+    }
+
+    #content-header-right h6{
+        font-size: 0.5rem;
+    }
+
+
+    #email-search{
+        height: 2em;
+        width: 8em;
+    }
+    
+    #subscribe-btn{
+        height: 2em;
+        width: 5em;
+        line-height: 0px;    
+    }
+
+}
+@media screen and (max-width: 656px) {
+    header{
+        height: 80px;
+    }
+
+    #heading{
+        width: 15em;
+        padding: 1px 1px;
+    
+    }
+
+    .article-title{
+        font-size: 0.65rem;
+    }
+    .article-date{
+        font-size: 0.45rem;
+    }
+    .article-description {
+        font-size: 0.55rem;
+    }
+
+    img{
+        width: 125px;
+        height: 125px;
+    }
+
+    .article-button{
+        font-size: 0.55rem;
+    }
+
+    #content-headers{
+        flex-direction: column;
+    }
+
+    #content-header-center {
+        order:3;
+    }
+    #content-header-center h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #content-header-right h6{
+        margin-top: 1rem;;
+    }
+}
+
+
+@media screen and (max-width: 574px) {
+
+    .article-title{
+        font-size: 0.6rem;
+    }
+    .article-date{
+        font-size: 0.4rem;
+    }
+    .article-description {
+        font-size: 0.5rem;
+    }
+
+    img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .article-button{
+        font-size: 0.45rem;
+        
+    }
+
+}
+
+
+@media screen and (max-width: 509px) {
+
+    .article-title{
+        font-size: 0.55rem;
+    }
+    .article-date{
+        font-size: 0.35rem;
+    }
+    .article-description {
+        font-size: 0.45rem;
+    }
+
+    img{
+        width: 110px;
+        height: 110px;
+    }
+
+    .article-button{
+        font-size: 0.4rem;
+        
+    }
+
+}
+
+
+@media screen and (max-width: 475px) {
+
+    .article-title{
+        font-size: 0.5rem;
+    }
+    .article-date{
+        font-size: 0.3rem;
+    }
+    .article-description {
+        font-size: 0.4rem;
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .article-button{
+        font-size: 0.4rem;
+        
+    }
+
+}
