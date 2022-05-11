@@ -1,0 +1,16 @@
+[
+    {
+        "login": "test@123.com",
+        "password": "paww234",
+        "age": 45,
+        "id": "2dc038b1",
+        "isDeleted": false
+    },
+    {
+        "login": "test1@d.com",
+        "password": "testps124",
+        "age": 46,
+        "id": "fdd6faef",
+        "isDeleted": false
+    }
+]
