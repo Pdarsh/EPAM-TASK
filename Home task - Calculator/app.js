@@ -17,10 +17,16 @@ function operation(optype, numbers) {
 }
 
 while (true) {
-  console.log("ENTER YOUR CHOICE\n----------------Calculator----------------");
-  console.log("1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.Exit");
+  console.log("ENTER YOUR CHOICE")
   console.log("----------------Calculator----------------");
-  console.log("Select Operation by Entering the number\n");
+  console.log("1.Addition")
+  console.log("2.Substraction")
+  console.log("3.Multiplication")
+  console.log("4.Division")
+  console.log("5.Exit");
+  console.log("----------------Calculator----------------");
+  console.log("Select Operation by Entering the number");
+  console.log()
   let choice = readline.question();
   if(choice === '5') break
   else if(choice > 5) {
