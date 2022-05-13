@@ -7,7 +7,7 @@ const saveUserData = (data) => {
 
 const getUserData = () => {
   const jsonData = fs.readFileSync("./db/users.json");
-  return JSON.parse(jsonData);
+  return JSON.parse(jsonData).filter((user) => user.isDeleted === false);;
 };
 
 module.exports = {

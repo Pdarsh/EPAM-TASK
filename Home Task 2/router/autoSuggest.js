@@ -12,7 +12,7 @@ router.get("/:loginSubstring", (req, res) => {
 
 const getAutoSuggestUsers = (loginSubstring,limit) => {
     const existUsers = getUserData();
-    const filteredUsers = existUsers.filter((user) =>  user.login.match(loginSubstring)).sort((a, b) => {
+    const filteredUsers = existUsers.filter((user) =>  user.login.split("@")[0].match(loginSubstring)).sort((a, b) => {
         return a.login.localeCompare(b.login);
     });
     if(filteredUsers.length > limit){
