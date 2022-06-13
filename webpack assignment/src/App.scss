@@ -1,0 +1,51 @@
+@import "./Variables.scss";
+
+
+// ------------Nav-------------
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: $navColor;
+    font-family: $font;
+    
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: $fontColor;
+}
+
+// ----------Main--------------
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $navColor;
+    font-size: $mainTextSize;
+    height: 100vh;
+    width: 100%;
+    background-color: $fontColor;
+}
+// -------------Footer-----------
+.footer{
+    background-color: $navColor;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: $fontColor;
+}
