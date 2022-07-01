@@ -1,0 +1,18 @@
+p ,h1 {
+    margin-left: 30px;
+    margin-top: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .Active{
+        color: green;
+        font-weight: 500;
+      }
+    .Deleted{
+        color: red;
+        font-weight: 500;
+      }
+    .detailblock .card{
+        border-style: groove;
+        border-color:black;
+        border-width: 2px;
+    }

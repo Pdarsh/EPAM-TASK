@@ -1,0 +1,4 @@
+<div class="contaner mx-5 my-3">
+    <ul >
+        <app-user *ngFor="let user of users" [user]="user" (Deactivate)="Deactivate(user.id)" (Activate)="Activate(user.id)" [type]="item"></app-user>    </ul>
+</div>
