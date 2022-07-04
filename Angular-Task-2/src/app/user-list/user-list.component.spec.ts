@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { UserListComponent } from './user-list.component';
 
@@ -8,6 +10,7 @@ describe('UserListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [RouterTestingModule],
       declarations: [ UserListComponent ]
     })
     .compileComponents();
@@ -19,5 +22,11 @@ describe('UserListComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('renders an independent user', () => {
+    const { debugElement } = fixture;
+    const user = debugElement.query(By.css('app-user'));
+    expect(user).toBeTruthy();
   });
 });

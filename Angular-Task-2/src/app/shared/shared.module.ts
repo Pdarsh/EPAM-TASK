@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from '../home/home.component';
 import { UserComponent } from '../user/user.component';
@@ -25,6 +25,7 @@ import { RouterModule } from '@angular/router';
     UserComponent,
     UserListComponent,
   ],
-  providers:[UsersService]
+  providers:[UsersService],
+
 })
 export class SharedModule { }

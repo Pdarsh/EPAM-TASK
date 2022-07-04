@@ -27,7 +27,6 @@ export class UserComponent implements OnInit {
 
   }
   Deactivatefun() {
-
     this.Deactivate.emit();
   }
 

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 import { User } from '../User';
 import { UsersService } from '../users.service';
 
@@ -9,7 +9,7 @@ import { UsersService } from '../users.service';
 })
 export class UserListComponent implements OnInit {
 
-  users!: User[];
+  users: any;
   @Input() item: any = null;
 
   constructor(private _users: UsersService) { }

@@ -8,6 +8,8 @@ import { DeletedModule } from './deleted/deleted.module';
 import { FormsModule } from '@angular/forms';
 import { ManageModule } from './manage/manage.module';
 import { RouterModule } from '@angular/router';
+import { ManageRoutingModule } from './manage/manage-routing.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RouterModule } from '@angular/router';
     ActiveModule,
     DeletedModule,
     RouterModule,
-    ManageModule
+    ManageModule,
+    ManageRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -23,7 +23,16 @@ export class UsersService {
     { id:"0014","firstName":"Sasha",lastName:"Banks",age: 30,"login": "sashaB",password:"1234",isDeleted: false}
   ]
   constructor() { }
-  getusers(state:boolean){
+
+  Activateuser(id:string){
+    const index = this.users.findIndex((obj => obj.id == id));
+    this.users[index].isDeleted = false;
+}
+  Deactivateuser(id:string){
+    const index = this.users.findIndex((obj => obj.id == id));
+    this.users[index].isDeleted = true;
+  }
+  getusers(state:boolean) {
     return this.users.filter((x:User)=>x.isDeleted===state)
   }
   getallusers(){
@@ -31,13 +40,5 @@ export class UsersService {
   }
   getuserbyid(id:string){
     return this.users.find((x:User)=>x.id===id)
-  }
-  Activateuser(id:string){
-    const index = this.users.findIndex((obj => obj.id == id));
-    this.users[index].isDeleted = false;
-  }
-  Deactivateuser(id:string){
-    const index = this.users.findIndex((obj => obj.id == id));
-    this.users[index].isDeleted = true;
   }
 }

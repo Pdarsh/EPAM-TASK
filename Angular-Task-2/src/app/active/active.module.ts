@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { ActiveComponent } from './active/active.component';
 import { FormsModule } from '@angular/forms';
-import { UserListComponent } from '../user-list/user-list.component';
 
 
 

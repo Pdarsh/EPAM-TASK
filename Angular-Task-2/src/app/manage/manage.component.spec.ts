@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 
 import { ManageComponent } from './manage.component';
 
@@ -19,5 +20,11 @@ describe('ManageComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('renders an independent user-list', () => {
+    const { debugElement } = fixture;
+    const userlist = debugElement.query(By.css('app-user-list'));
+    expect(userlist).toBeTruthy();
   });
 });
