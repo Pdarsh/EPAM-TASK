@@ -1,0 +1,54 @@
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.shopping-detail #h2{
+    margin: 0px 0px 0px 20px;
+}
+.shopping-bag {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  max-height: 300px;
+  border: solid 3px black;
+  margin: 20px;
+  overflow: scroll;
+  padding: 10px;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+tr.top td {
+  border-top: thin solid black;
+}
+
+.btn {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: rgb(117, 117, 248);
+  background-color: rgb(245, 188, 0);
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 20px;
+}
+
+#address-heading{
+  margin: 20px;
+}
+
+@media screen and (max-width: 789px) {
+  .cart-container{
+    flex-direction: column;
+  }
+
+  .shopping-bag{
+    width: 90vw;
+  }
+}

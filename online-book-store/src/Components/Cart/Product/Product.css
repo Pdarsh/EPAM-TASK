@@ -1,0 +1,11 @@
+  
+  .selected-books{
+      display: flex;
+      padding: 2px;
+      border-bottom: solid black 1px;
+  }
+  
+  .product-book-img img{
+      height: 100px;
+      width: 100px;
+  }

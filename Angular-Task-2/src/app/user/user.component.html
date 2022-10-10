@@ -1,0 +1,16 @@
+<li class=" my-3 card d-flex flex-row" [ngStyle]="{'border-color': user.isDeleted ? 'red' : 'green'}">
+    <h5 class="p-2 m-2">{{user.firstName }} {{user.lastName}}</h5>
+        <container-element class="m-3 ms-auto" [ngSwitch]="type">
+            <button *ngSwitchCase="true"class="btn btn-success " (click)="Activatefun()">Activate </button>
+            <button *ngSwitchCase="false" class="btn btn-danger " (click)="Deactivatefun()">Deactivate </button>
+            <button *ngSwitchDefault class="btn btn-primary" (click)="navigate()"> Details </button>   
+          </container-element>
+</li>
+
+
+<style>
+    .card{
+     border-style: solid;
+     border-width: 2px;
+ }
+ </style>

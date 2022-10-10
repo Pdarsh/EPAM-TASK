@@ -1,0 +1,12 @@
+<div class="col-10 my-3 detailblock"> 
+    <div class="card"> 
+    <h1 >{{user?.firstName }} {{user?.lastName}}</h1>
+    <div *ngIf="user?.isDeleted; then trueBlock ; else falseBlock"></div>
+    <ng-template #trueBlock><p class="Deleted">Deleted</p></ng-template>
+    <ng-template #falseBlock><p class="Active">Active</p></ng-template>
+    <p>Login Id - {{user?.id}}</p>
+    <p>First Name - {{user?.firstName}} </p>
+    <p>Last Name - {{user?.lastName}}</p>
+    <p>Age - {{user?.age}}</p>
+    </div>
+</div>
